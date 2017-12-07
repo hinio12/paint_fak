@@ -20,7 +20,7 @@ LIGHT_SHADE = u"\u2591"
 DARK_SHADE = u"\u2593"
 MEDIUM_SHADE = u"\u2592"
 
-class CELL(object): # pylint: disable=too-few-public-methods
+class CELL(object): 
     ''' define visualy cells '''
     bkg = MEDIUM_SHADE
     one = LIGHT_SHADE
@@ -129,7 +129,7 @@ XXX = "*es*e*s*w*n[[[e]w[s]e[ee]*e*[ww]es[ss]*n[*]*n[nn]w[n]" + \
       "s[w]e*e]sw[n*sw]e[e]w[s]ee[sw[e*ws]en[n]es]w[w]e]"
 
 
-PF_1 = PaintFuck(code=XXX, iterations=50000, width=50, height=50)
+#PF_1 = PaintFuck(code=XXX, iterations=50000, width=50, height=50)
 PF_1 = PaintFuck(code=BC, iterations=50000, width=50, height=50)
 PF_1.print_field()
 PF_1.solve()
